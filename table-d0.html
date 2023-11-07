@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Skydash Admin</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="static/css/feather.css">
+  <link rel="stylesheet" href="static/css/themify-icons.css">
+  <link rel="stylesheet" href="static/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="static/css/style.css">
+  <!-- endinject -->
+
+</head>
+
+<body>
+  <div class="container-scroller">
+    <!-- partial:../../partials/_navbar.html -->
+    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+        <a class="navbar-brand brand-logo mr-5" href="index.html"><img src="static/picture/head.jpg" class="mr-2" alt="logo"></a>
+        <a>drizzlezyk</a>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+        
+
+        
+      </div>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:../../partials/_settings-panel.html -->
+      <div class="theme-setting-wrapper">
+        <div id="settings-trigger"><i class="ti-settings"></i></div>
+        <div id="theme-settings" class="settings-panel">
+          <i class="settings-close ti-close"></i>
+          <p class="settings-heading">SIDEBAR SKINS</p>
+          <div class="sidebar-bg-options selected" id="sidebar-light-theme"><div class="img-ss rounded-circle bg-light border mr-3"></div>Light</div>
+          <div class="sidebar-bg-options" id="sidebar-dark-theme"><div class="img-ss rounded-circle bg-dark border mr-3"></div>Dark</div>
+          <p class="settings-heading mt-2">HEADER SKINS</p>
+          <div class="color-tiles mx-0 px-4">
+            <div class="tiles success"></div>
+            <div class="tiles warning"></div>
+            <div class="tiles danger"></div>
+            <div class="tiles info"></div>
+            <div class="tiles dark"></div>
+            <div class="tiles default"></div>
+          </div>
+        </div>
+      </div>
+      <div id="right-sidebar" class="settings-panel">
+        <i class="settings-close ti-close"></i>
+        <ul class="nav nav-tabs border-top" id="setting-panel" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="todo-tab" data-toggle="tab" href="#todo-section" role="tab" aria-controls="todo-section" aria-expanded="true">TO DO LIST</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="chats-tab" data-toggle="tab" href="#chats-section" role="tab" aria-controls="chats-section">CHATS</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="setting-content">
+          <div class="tab-pane fade show active scroll-wrapper" id="todo-section" role="tabpanel" aria-labelledby="todo-section">
+            <div class="add-items d-flex px-3 mb-0">
+              <form class="form w-100">
+                <div class="form-group d-flex">
+                  <input type="text" class="form-control todo-list-input" placeholder="Add To-do">
+                  <button type="submit" class="add btn btn-primary todo-list-add-btn" id="add-task">Add</button>
+                </div>
+              </form>
+            </div>
+            <div class="list-wrapper px-3">
+              <ul class="d-flex flex-column-reverse todo-list">
+                <li>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox">
+                      Team review meeting at 3.00 PM
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox">
+                      Prepare for presentation
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox">
+                      Resolve all the low priority tickets due today
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li class="completed">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox" checked="">
+                      Schedule meeting for next week
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li class="completed">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox" checked="">
+                      Project review
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+              </ul>
+            </div>
+            <h4 class="px-3 text-muted mt-5 font-weight-light mb-0">Events</h4>
+            <div class="events pt-4 px-3">
+              <div class="wrapper d-flex mb-2">
+                <i class="ti-control-record text-primary mr-2"></i>
+                <span>Feb 11 2018</span>
+              </div>
+              <p class="mb-0 font-weight-thin text-gray">Creating component page build a js</p>
+              <p class="text-gray mb-0">The total number of sessions</p>
+            </div>
+            <div class="events pt-4 px-3">
+              <div class="wrapper d-flex mb-2">
+                <i class="ti-control-record text-primary mr-2"></i>
+                <span>Feb 7 2018</span>
+              </div>
+              <p class="mb-0 font-weight-thin text-gray">Meeting with Alisa</p>
+              <p class="text-gray mb-0 ">Call Sarah Graves</p>
+            </div>
+          </div>
+          <!-- To do section tab ends -->
+          <div class="tab-pane fade" id="chats-section" role="tabpanel" aria-labelledby="chats-section">
+            <div class="d-flex align-items-center justify-content-between border-bottom">
+              <p class="settings-heading border-top-0 mb-3 pl-3 pt-0 border-bottom-0 pb-0">Friends</p>
+              <small class="settings-heading border-top-0 mb-3 pt-0 border-bottom-0 pb-0 pr-3 font-weight-normal">See All</small>
+            </div>
+            <ul class="chat-list">
+              <li class="list active">
+                <div class="profile"><img src="static/picture/face1.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Thomas Douglas</p>
+                  <p>Available</p>
+                </div>
+                <small class="text-muted my-auto">19 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="static/picture/face2.jpg" alt="image"><span class="offline"></span></div>
+                <div class="info">
+                  <div class="wrapper d-flex">
+                    <p>Catherine</p>
+                  </div>
+                  <p>Away</p>
+                </div>
+                <div class="badge badge-success badge-pill my-auto mx-2">4</div>
+                <small class="text-muted my-auto">23 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="static/picture/face3.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Daniel Russell</p>
+                  <p>Available</p>
+                </div>
+                <small class="text-muted my-auto">14 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="static/picture/face4.jpg" alt="image"><span class="offline"></span></div>
+                <div class="info">
+                  <p>James Richardson</p>
+                  <p>Away</p>
+                </div>
+                <small class="text-muted my-auto">2 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="static/picture/face5.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Madeline Kennedy</p>
+                  <p>Available</p>
+                </div>
+                <small class="text-muted my-auto">5 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="static/picture/face6.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Sarah Graves</p>
+                  <p>Available</p>
+                </div>
+                <small class="text-muted my-auto">47 min</small>
+              </li>
+            </ul>
+          </div>
+          <!-- chat tab ends -->
+        </div>
+      </div>
+      <!-- partial -->
+      <!-- partial:../../partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <i class="icon-grid menu-icon"></i>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="table-d0.html">
+              <i class="icon-grid menu-icon"></i>
+              <span class="menu-title">Insight-D0</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="table-d1.html">
+              <i class="icon-grid menu-icon"></i>
+              <span class="menu-title">Insight-D1</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">D0-模型原理</h4>
+                  <p class="card-description">
+                    LLM模型结构相关原理
+                  </p>
+                  <div class="table-responsive pt-3">
+                    <!-- <table class="table table-bordered"> -->
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>Name</th>
+                          <th>Company/Organization</th>
+                          <th>Brief Introduction</th>
+                          <th>Paper</th>
+                          <th>Github WFS</th>
+                          <th>Contributors</th>
+                          
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>RWKV</td>
+                          <td>国人主导的研究团队</td>
+                          <td>RWKV结合了Transformer的高效并行化训练和RNN的高效推理，利用线性注意机制，允许将模型制定为Transformer或RNN，在训练期间并行计算，在推理期间保持恒定的计算和内存复杂性，将非Transformer架构扩展到数百亿个参数。</td>
+                          <td>-</td>
+                          <td> -</td>
+                          <td> -</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>FlashAttention</td>
+                          <td>Stanford</td>
+                          <td>FlashAttention-2是一种从头编写的算法，可以加快注意力并减少其内存占用，且没有任何近似值。比起第一代，FlashAttention-2速度提升了2倍。甚至，相较于PyTorch的标准注意力，其运行速度最高可达9倍。</td>
+                          <td><a href="https://arxiv.org/abs/2307.08691">FlashAttention2</a></td>
+                          <td> 82/434/6.3k</td>
+                          <td> -</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>Long-Context</td>
+                          <td>Abacus.AI </td>
+                          <td>对现有基于 LLaMA 或 LLaMA 2 模型的上下文长度外推方法进行了广泛的调查，并提出一种新的 truncation 策略，该模型也是首个基于 LLaMA2 的 32k 上下文窗口开源 LLM。</td>
+                          <td>-</td>
+                          <td> -</td>
+                          <td> -</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">D0-训练原理</h4>
+                  <p class="card-description">
+                    LLM训练使用的相关技术和方法
+                  </p>
+                  <div class="table-responsive pt-3">
+                    <!-- <table class="table table-bordered"> -->
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>Name</th>
+                          <th>Company/Organization</th>
+                          <th>Brief Introduction</th>
+                          <th>Paper</th>
+                          <th>Github WFS</th>
+                          <th>Contributors</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>RLHF</td>
+                          <td>OpenAI联合DeepMind</td>
+                          <td>RLHF就是基于人类反馈（Human Feedback）对语言模型进行强化学习（Reinforcement Learning），和一般的fine-tune过程乃至prompt tuning不同。</td>
+                          <td><a href="https://arxiv.org/abs/1706.03741">RLHF</a></td>
+                          <td>-</td>
+                          <td> -</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>开源RLHF-trlX</td>
+                          <td>CarperAI ，EleutherAI研究小组的一个新实验室</td>
+                          <td>trlX 是一个从头开始设计的分布式训练框架，专注于使用提供的奖励函数或奖励标记的数据集通过强化学习来微调大型语言模型。使用方法： 可以使用奖励函数或带有奖励标签的数据集来训练模型。</td>
+                          <td>-</td>
+                          <td>48/348/3.5k</td>
+                          <td> 45</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">D0-微调原理</h4>
+                  <p class="card-description">
+                    LLM微调的方法
+                  </p>
+                  <div class="table-responsive pt-3">
+                    <!-- <table class="table table-bordered"> -->
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>Name</th>
+                          <th>Company/Organization</th>
+                          <th>Brief Introduction</th>
+                          <th>Paper</th>
+                          <th>Github WFS</th>
+                          <th>Contributors</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td><a href="https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0">LoRA</td>
+                          <td>Microsoft</td>
+                          <td>直译为大语言模型的低阶适应，是一种PEFT（参数高效性微调方法），这是微软的研究人员为了解决大语言模型微调而开发的一项技术。</td>
+                          <td><a href="https://arxiv.org/abs/2106.09685">LoRA </a></td>
+                          <td> 43/266/5k</td>
+                          <td>7</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td><a href="https://github.com/artidoro/qlora">QLoRA</td>
+                          <td>华盛顿大学</td>
+                          <td>与16位完全微调基线相比，QLoRA将65B参数模型进行微调的平均内存需求从 >780GB 的 GPU 内存减少到48GB，而不会降低运行时间或预测性能。</td>
+                          <td><a href="https://arxiv.org/abs/2305.14314">QLoRA </a></td>
+                          <td> 83/715/8.1k</td>
+                          <td>16</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td><a href="https://github.com/sail-sg/lorahub">LoRAHub</td>
+                          <td>sea AI lab singapore</td>
+                          <td>LoraHub是AI框架，用于自动组合LoRA模块，实现对新任务的适应性性能。具有高性能和灵活性，可以在只有CPU的计算机上运行，通过减少推理成本提高效率。为用户提供了一个共享、访问和应用训练过的LoRA模块的平台，为NLP任务的开发和应用提供了便利。</td>
+                          <td><a href="https://arxiv.org/abs/2307.13269">LoraHub </a></td>
+                          <td> 11/24/401</td>
+                          <td>11</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">D0-推理</h4>
+                  <p class="card-description">
+                    LLM推理相关算法
+                  </p>
+                  <div class="table-responsive pt-3">
+                    <!-- <table class="table table-bordered"> -->
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>Name</th>
+                          <th>Company/Organization</th>
+                          <th>Brief Introduction</th>
+                          <th>Paper</th>
+                          <th>Github WFS</th>
+                          <th>Contributors</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td><a href="https://github.com/vllm-project/vllm">vLLM</td>
+                          <td>加州大学伯克利分校</td>
+                          <td>主要用于快速LLM推理和服务。vLLM的核心是PagedAttention，是一种新的注意力算法，将在操作系统的虚拟内存中分页的经典思想引入到LLM服务中,配备了PagedAttention的vLLM将LLM 服务状态重新定义：它比HuggingFace Transformers提供高达24倍的吞吐量，无需任何模型架构更改。</td>
+                          <td></td>
+                          <td> 103/1.1k/9.1k</td>
+                          <td>107</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">D0-向量数据库</h4>
+                  <p class="card-description">
+                    LLM训练、推理相关的向量数据库
+                  </p>
+                  <div class="table-responsive pt-3">
+                    <!-- <table class="table table-bordered"> -->
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>Name</th>
+                          <th>Company/Organization</th>
+                          <th>Brief Introduction</th>
+                          <th>Github WFS</th>
+                          <th>Contributors</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td><a href="https://github.com/milvus-io/milvus">Milvus</td>
+                          <td>上海Zilliz（6000万融资）</td>
+                          <td>开箱即用型，云原生向量数据库，Milvus为海量向量搜索场景而设计。Milvus不但集成了业界成熟的向量搜索技术如Faiss和SPTAG，Milvus也实现了高效的NSG图索引。</td>
+                          <td> 315/2.6k/23.9k</td>
+                          <td>228</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td><a href="https://github.com/jina-ai/jina">jina</td>
+                          <td>肖涵老师团队</td>
+                          <td>以通用性为目标，几乎可以搜索任何内容形式（例如文本，图像，视频，音频）；它的目标是在AI生产中，利用现代软件基础架构并以最佳工程实践进行构建。旨在易于使用，针对多个平台，架构和用例进行优化。</td>
+                          <td>197/2.1k/19.1k</td>
+                          <td>172</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td><a href="https://github.com/chroma-core/chroma">Chroma </td>
+                          <td>Chroma </td>
+                          <td>为不同的LLM应用程序添加状态和内存，以减少幻觉并增加事实准确性。是快速增长的嵌入式数据库公司，它将与不同的LLMOps工具不断融合。</td>
+                          <td>35/174/3.6k</td>
+                          <td>261</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">D0-LLM Cache</h4>
+                  <p class="card-description">
+                    LLM 训练和推理中的缓存
+                  </p>
+                  <div class="table-responsive pt-3">
+                    <!-- <table class="table table-bordered"> -->
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>Name</th>
+                          <th>Company/Organization</th>
+                          <th>Brief Introduction</th>
+                          <th>Github WFS</th>
+                          <th>Contributors</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td><a href="https://github.com/redis/redis">Redis</td>
+                          <td>Redis</td>
+                          <td>Redis 是一种开源（BSD 许可）内存中数据结构存储，用作数据库、缓存、消息代理和流引擎。</td>
+                          <td>2.6k/22.6k/60.4k</td>
+                          <td>667</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td><a href="https://github.com/sqlite/sqlite">sqlite</td>
+                          <td>sqlite</td>
+                          <td>SQLite是一个进程内的库，实现了自给自足的、无服务器的、零配置的、事务性的SQL 数据库引擎。 </td>
+                          <td>95/712/4.1k</td>
+                          <td>-</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td><a href="https://github.com/zilliztech/GPTCache">GPTCache </td>
+                          <td>Zilliz </td>
+                          <td>LLM 服务可能会表现出响应时间缓慢，尤其是在处理大量请求时。GPTCache是一个致力于构建用于存储 LLM 响应的语义缓存的项目。</td>
+                          <td>49/254/4k</td>
+                          <td>27</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">D0-LLM logging/ops</h4>
+                  <p class="card-description">
+                    LLM 日志
+                  </p>
+                  <div class="table-responsive pt-3">
+                    <!-- <table class="table table-bordered"> -->
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>Name</th>
+                          <th>Company/Organization</th>
+                          <th>Brief Introduction</th>
+                          <th>Github WFS</th>
+                          <th>Contributors</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td><a href="https://github.com/MagnivOrg/prompt-layer-library">PromptLayer</td>
+                          <td>PromptLayer</td>
+                          <td>PromptLayer 是一个开发工具，可让您跟踪、管理和共享GPT提示工程。它充当您的代码和 OpenAI 的 python 库之间的中间件，记录您的所有 API 请求并保存相关元数据，以便在 PromptLayer 仪表板中轻松浏览和搜索。</td>
+                          <td>4/25/275</td>
+                          <td>3</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td><a href="https://github.com/Helicone/helicone">Helicone</td>
+                          <td>Helicone</td>
+                          <td>只需一行代码即可简化GPT-3 监控。 </td>
+                          <td>7/102/843</td>
+                          <td>12</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td><a href="https://github.com/mlflow/mlflow">MLflow </td>
+                          <td>Databricks </td>
+                          <td>Mlflow LLM 是一个开放式机器学习平台，跟踪组件用于记录和查看 LLM 的行为。项目组件提供了可重复的简单包装格式，模型组件提供了管理和部署模型的工具</td>
+                          <td>291/3.4k/15.8k</td>
+                          <td>593</td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td><a href="https://github.com/wandb/wandb">Weights & Biases </td>
+                          <td>Weights & Biases </td>
+                          <td>W&B Prompts 允许我们使用名为“ Trace ”的工具分析 LLM 的输入和输出、查看中间结果并安全地存储和管理我们的提示和 LLM 链配置。</td>
+                          <td>54/571/7.4k</td>
+                          <td>593</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12 stretch-card">
+              
+            </div>
+          </div>
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:../../partials/_footer.html -->
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright &copy; 2022.Company name All rights reserved.<a target="_blank" href="https://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a>
+            
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- plugins:js -->
+  <script src="static/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page -->
+  <!-- End plugin js for this page -->
+  <!-- inject:js -->
+  <script src="static/js/off-canvas.js"></script>
+  <script src="static/js/hoverable-collapse.js"></script>
+  <script src="static/js/template.js"></script>
+  <script src="static/js/settings.js"></script>
+  <script src="static/js/todolist.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <!-- End custom js for this page-->
+</body>
+
+</html>

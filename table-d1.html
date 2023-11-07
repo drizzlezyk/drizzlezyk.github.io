@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Skydash Admin</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="static/css/feather.css">
+  <link rel="stylesheet" href="static/css/themify-icons.css">
+  <link rel="stylesheet" href="static/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="static/css/style.css">
+  <!-- endinject -->
+
+</head>
+
+<body>
+  <div class="container-scroller">
+    <!-- partial:../../partials/_navbar.html -->
+    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+        <a class="navbar-brand brand-logo mr-5" href="index.html"><img src="static/picture/head.jpg" class="mr-2" alt="logo"></a>
+        <a> drizzlezyk</a>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+        
+      </div>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:../../partials/_settings-panel.html -->
+      <div class="theme-setting-wrapper">
+        <div id="settings-trigger"><i class="ti-settings"></i></div>
+        <div id="theme-settings" class="settings-panel">
+          <i class="settings-close ti-close"></i>
+          <p class="settings-heading">SIDEBAR SKINS</p>
+          <div class="sidebar-bg-options selected" id="sidebar-light-theme"><div class="img-ss rounded-circle bg-light border mr-3"></div>Light</div>
+          <div class="sidebar-bg-options" id="sidebar-dark-theme"><div class="img-ss rounded-circle bg-dark border mr-3"></div>Dark</div>
+          <p class="settings-heading mt-2">HEADER SKINS</p>
+          <div class="color-tiles mx-0 px-4">
+            <div class="tiles success"></div>
+            <div class="tiles warning"></div>
+            <div class="tiles danger"></div>
+            <div class="tiles info"></div>
+            <div class="tiles dark"></div>
+            <div class="tiles default"></div>
+          </div>
+        </div>
+      </div>
+      <div id="right-sidebar" class="settings-panel">
+        <i class="settings-close ti-close"></i>
+        <ul class="nav nav-tabs border-top" id="setting-panel" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="todo-tab" data-toggle="tab" href="#todo-section" role="tab" aria-controls="todo-section" aria-expanded="true">TO DO LIST</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="chats-tab" data-toggle="tab" href="#chats-section" role="tab" aria-controls="chats-section">CHATS</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="setting-content">
+          <div class="tab-pane fade show active scroll-wrapper" id="todo-section" role="tabpanel" aria-labelledby="todo-section">
+            <div class="add-items d-flex px-3 mb-0">
+              <form class="form w-100">
+                <div class="form-group d-flex">
+                  <input type="text" class="form-control todo-list-input" placeholder="Add To-do">
+                  <button type="submit" class="add btn btn-primary todo-list-add-btn" id="add-task">Add</button>
+                </div>
+              </form>
+            </div>
+            <div class="list-wrapper px-3">
+              <ul class="d-flex flex-column-reverse todo-list">
+                <li>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox">
+                      Team review meeting at 3.00 PM
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox">
+                      Prepare for presentation
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox">
+                      Resolve all the low priority tickets due today
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li class="completed">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox" checked="">
+                      Schedule meeting for next week
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+                <li class="completed">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox" checked="">
+                      Project review
+                    </label>
+                  </div>
+                  <i class="remove ti-close"></i>
+                </li>
+              </ul>
+            </div>
+            <h4 class="px-3 text-muted mt-5 font-weight-light mb-0">Events</h4>
+            <div class="events pt-4 px-3">
+              <div class="wrapper d-flex mb-2">
+                <i class="ti-control-record text-primary mr-2"></i>
+                <span>Feb 11 2018</span>
+              </div>
+              <p class="mb-0 font-weight-thin text-gray">Creating component page build a js</p>
+              <p class="text-gray mb-0">The total number of sessions</p>
+            </div>
+            <div class="events pt-4 px-3">
+              <div class="wrapper d-flex mb-2">
+                <i class="ti-control-record text-primary mr-2"></i>
+                <span>Feb 7 2018</span>
+              </div>
+              <p class="mb-0 font-weight-thin text-gray">Meeting with Alisa</p>
+              <p class="text-gray mb-0 ">Call Sarah Graves</p>
+            </div>
+          </div>
+          <!-- To do section tab ends -->
+          <div class="tab-pane fade" id="chats-section" role="tabpanel" aria-labelledby="chats-section">
+            <div class="d-flex align-items-center justify-content-between border-bottom">
+              <p class="settings-heading border-top-0 mb-3 pl-3 pt-0 border-bottom-0 pb-0">Friends</p>
+              <small class="settings-heading border-top-0 mb-3 pt-0 border-bottom-0 pb-0 pr-3 font-weight-normal">See All</small>
+            </div>
+            <ul class="chat-list">
+              <li class="list active">
+                <div class="profile"><img src="static/picture/face1.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Thomas Douglas</p>
+                  <p>Available</p>
+                </div>
+                <small class="text-muted my-auto">19 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="static/picture/face2.jpg" alt="image"><span class="offline"></span></div>
+                <div class="info">
+                  <div class="wrapper d-flex">
+                    <p>Catherine</p>
+                  </div>
+                  <p>Away</p>
+                </div>
+                <div class="badge badge-success badge-pill my-auto mx-2">4</div>
+                <small class="text-muted my-auto">23 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="static/picture/face3.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Daniel Russell</p>
+                  <p>Available</p>
+                </div>
+                <small class="text-muted my-auto">14 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="static/picture/face4.jpg" alt="image"><span class="offline"></span></div>
+                <div class="info">
+                  <p>James Richardson</p>
+                  <p>Away</p>
+                </div>
+                <small class="text-muted my-auto">2 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="static/picture/face5.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Madeline Kennedy</p>
+                  <p>Available</p>
+                </div>
+                <small class="text-muted my-auto">5 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="static/picture/face6.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Sarah Graves</p>
+                  <p>Available</p>
+                </div>
+                <small class="text-muted my-auto">47 min</small>
+              </li>
+            </ul>
+          </div>
+          <!-- chat tab ends -->
+        </div>
+      </div>
+      <!-- partial -->
+      <!-- partial:../../partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <i class="icon-grid menu-icon"></i>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="table-d0.html">
+              <i class="icon-grid menu-icon"></i>
+              <span class="menu-title">Insight-D0</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="table-d1.html">
+              <i class="icon-grid menu-icon"></i>
+              <span class="menu-title">Insight-D1</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">D1-领域AIGC</h4>
+                  <p class="card-description">
+                    图像、音频、代码相关LLM洞察，包括以文生图、图像分割、视频等领域 
+                  </p>
+                  <div class="table-responsive pt-3">
+                    <!-- <table class="table table-bordered"> -->
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>Tags</th>
+                          <th>Name</th>
+                          <th>Company/Organization</th>
+                          <th>Brief Introduction</th>
+                          <th> Github WFS</th>
+                          <th>HF Like</th>
+                          <th>Contributors</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td><label class="badge badge-danger">Hot</label></td>
+                          <td><a href="https://github.com/CompVis/stable-diffusion">Stable Diffusion</td>
+                          <td>Stability AI</td>
+                          <td>Stable diffusion是一个基于Latent Diffusion Models（LDMs）的以文生图模型的实现，Latent Diffusion Models（LDMs）的论文是《High-Resolution Image Synthesis with Latent Diffusion Models》</td>
+                          <td>501/8.7k/55.9k</td>
+                          <td> 9.29k</td>
+                          <td> 8</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td> </td>
+                          <td><a href="https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0">SDXL</td>
+                          <td>Stability AI</td>
+                          <td>相对SD的特点：更擅长生成真实风格图片。该模型在图像生成功能方面取得了重大进步，提供了增强的图像合成和面部生成功能，从而产生令人惊叹的视觉效果和逼真的美感。</td>
+                          <td>-</td>
+                          <td> 3.4k</td>
+                          <td> -</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td> </td>
+                          <td><a href="https://openai.com/dall-e-3">DALL E3</td>
+                          <td>openAI</td>
+                          <td>ChatGPT 集成，还能生成更高质量的图像，更准确地反映提示内容。DALL・E 将文本 prompt 转换成图像。最新版本能更好地理解上下文，并且处理较长的 prompt 效果会更好。</td>
+                          <td>-</td>
+                          <td>-</td>
+                          <td>-</td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>  <label class="badge badge-warning">Super Hot</label></td>
+                          <td><a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui">Stable Diffusion web UI</td>
+                          <td>Hugging Face</td>
+                          <td>一个链接gradio和Stable Diffusion模型的浏览器界面。通过自己下载，获得一个极其强大的模型，该模型能够模拟和重建几乎任何可以以视觉形式想象的概念。</td>
+                          <td>917/21.7k/108k</td>
+                          <td>-</td>
+                          <td>476</td>
+                         
+                        </tr>
+                        <tr>
+                          <td>5</td>
+                          <td> </td>
+                          <td><a href="https://segment-anything.com/">Segment Anything</td>
+                          <td>Meta</td>
+                          <td>剪裁出图片中的目标</td>
+                          <td>-</td>
+                          <td>-</td>
+                          <td> -</td>
+                        </tr>
+                        <tr>
+                          <td>6</td>
+                          <td> </td>
+                          <td><a href="https://github.com/facebookresearch/audiocraft">Audiocraft</td>
+                          <td>Meta</td>
+                          <td>AudioCraft是一个用于音频生成深度学习研究的PyTorch库,包含用于生成高质量音频的两种最先进的AI生成模型的推理和训练代码：AudioGen和MusicGen,用于音频深度学习研究的PyTorch组件以及开发模型的训练管道</td>
+                          <td>135/1.2k/13.6k</td>
+                          <td>-</td>
+                          <td>22</td>
+                        </tr>
+                        <tr>
+                          <td>7</td>
+                          <td> </td>
+                          <td><a href="https://github.com/modelscope/facechain">FaceChain</td>
+                          <td>阿里</td>
+                          <td>FaceChain是一个可以用来打造个人数字形象的深度学习模型工具。用户仅需要提供最低三张照片即可获得独属于自己的个人形象数字替身。支持在gradio的界面中使用模型训练和推理，使用python脚本进行训练推理。</td>
+                          <td>39/261/6.7k</td>
+                          <td>-</td>
+                          <td>8</td>
+                        </tr>
+                        <tr>
+                          <td>8</td>
+                          <td> </td>
+                          <td><a href="https://huggingface.co/stabilityai/stablecode-instruct-alpha-3b">StableCode</td>
+                          <td>Stability AI</td>
+                          <td>StableCode-Instruct-Alpha-3B是一个仅包含 30 亿个参数的解码器指令调整代码模型，已在多种编程语言上进行了预训练，在 stackoverflow 开发人员调查中名列前茅。</td>
+                          <td>-</td>
+                          <td>273</td>
+                          <td>-</td>
+                        </tr>
+                        <tr>
+                          <td>9</td>
+                          <td> </td>
+                          <td><a href="https://github.com/facebookresearch/codellama">CodeLlama</td>
+                          <td>Meta</td>
+                          <td>支持多种编程语言，包括 Python、C++、Java、PHP、Typescript (Javascript)、C# 和 Bash。Code Llama 稳定支持了最高 10 万 token 的上下文生成。参数量7B、13B、34B</td>
+                          <td>116/1k/10.9k</td>
+                          <td>170</td>
+                          <td>11</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">D1-开源LLM</h4>
+                  <p class="card-description">
+                    开源LLM模型洞察，包括预训练LLM和微调LLM 
+                  </p>
+                  <div class="table-responsive pt-3">
+                    <!-- <table class="table table-bordered"> -->
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>Update Date</th>
+                          <th>Name</th>
+                          <th>Company/Organization</th>
+                          <th>Brief Introduction</th>
+                          <th>Param Level</th>
+                          <th> Github WFS</th>
+                          <th>HF Like</th>
+                          <th>Contributors</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td><label class="badge badge-danger">Hot</label></td>
+                          <td><a href="https://github.com/facebookresearch/llama">llama2</td>
+                          <td>Meta</td>
+                          <td>该架构与第一个 Llama 非常相似，在本文之后添加了Groupe Query Attention (GQA),相比于 Llama 1，Llama 2 的训练数据多了 40%，上下文长度也翻倍，并采用了分组查询注意力机制。</td>
+                          <td>7B\13B\70B</td>
+                          <td>457/7.5k/44.7k</td>
+                          <td>2.93k</td>
+                          <td>40</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td> <label class="badge badge-danger">Hot</label></td>
+                          <td><a href="https://github.com/tatsu-lab/stanford_alpaca">Alpaca</td>
+                          <td>Stanford</td>
+                          <td>Stanford Alpaca模型是根据 7B LLaMA 模型在 Self-Instruct论文中的技术生成的 52K 指令跟随数据上进行微调的。</td>
+                          <td>7B</td>
+                          <td>278/3k/27.2k</td>
+                          <td> -</td>
+                          <td> 7</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td> </td>
+                          <td><a href="https://huggingface.co/lmsys/vicuna-13b-v1.3">Vicuna</td>
+                          <td>加州大学伯克利分校</td>
+                          <td>Vicuna-13B达到了OpenAI ChatGPT和Google Bard 90%以上的质量，同时在 90% 以上的情况下超过了LLaMA和 Stanford Alpaca等其他模型的表现。训练和服务代码，以及在线演示都是公开的，可用于非商业用途。</td>
+                          <td>13B</td>
+                          <td></td>
+                          <td> 161</td>
+                          <td> -</td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td> <label class="badge badge-danger">Hot</label></td>
+                          <td><a href="https://github.com/THUDM/ChatGLM-6B">ChatGLM</td>
+                          <td>清华</td>
+                          <td>ChatGLM-6B 是一个开源的、支持中英双语的对话语言模型，基于General Language Model(GLM) 架构，具有62亿参数。结合模型量化技术，用户可以在消费级的显卡上进行本地部署.</td>
+                          <td>6B</td>
+                          <td>358/4.8k/35.4k</td>
+                          <td> -</td>
+                          <td> 45</td>
+                        </tr>
+                        <tr>
+                          <td>5</td>
+                          <td> </td>
+                          <td><a href="https://github.com/databrickslabs/dolly">Dolly</td>
+                          <td>Databricks</td>
+                          <td>Dolly 2.0 是一个 12B参数的语言模型，它基于开源 EleutherAI pythia 模型系列，根据 Databricks 员工众包的新的、高质量的人工生成指令跟随数据集进行了微调。</td>
+                          <td>12B</td>
+                          <td>108/779/10.6k</td>
+                          <td> -</td>
+                          <td> 13</td>
+                        </tr>
+                        <tr>
+                          <td>6</td>
+                          <td> </td>
+                          <td><a href="https://huggingface.co/tiiuae/falcon-40b">Falcon</td>
+                          <td>阿联酋</td>
+                          <td>Falcon属于自回归解码器模型。它使用自定义工具构建，包含一个独特的数据管道，该管道从公开网络中提取训练数据。Falcon一共耗费两个月，在AWS的384个A100 40G GPU上训练而成。</td>
+                          <td>40B、7B</td>
+                          <td>-</td>
+                          <td> 2.32k</td>
+                          <td> -</td>
+                        </tr>
+                        <tr>
+                          <td>7</td>
+                          <td></td>
+                          <td><a href="https://huggingface.co/mistralai/Mistral-7B-v0.1">Mistral 7B</td>
+                          <td>Mistral AI</td>
+                          <td>在所有基准测试中均优于 Llama 2 13B，接近 CodeLlama 7B 的代码性能，同时保持良好的英语任务表现；使用分组查询注意力 (GQA) 进行更快的推理；使用滑动窗口注意 (SWA) 以较小的成本处理较长的序列</td>
+                          <td>7B</td>
+                          <td>-</td>
+                          <td> 1.71k</td>
+                          <td> -</td>
+                        </tr>
+                        <tr>
+                          <td>8</td>
+                          <td> </td>
+                          <td><a href="https://huggingface.co/HuggingFaceH4/zephyr-7b-beta">Zephyr-7B</td>
+                          <td>HuggingFace</td>
+                          <td>基于Mistral 7B进行微调的模型l；Zephyr-7B-β 是MT-Bench和AlpacaEval基准上排名最高的 7B 聊天模型</td>
+                          <td>7B</td>
+                          <td>-</td>
+                          <td> 665</td>
+                          <td> -</td>
+                        </tr>
+                        <tr>
+                          <td>9</td>
+                          <td> </td>
+                          <td><a href="https://huggingface.co/Qwen/Qwen-7B">QWen</td>
+                          <td>阿里</td>
+                          <td>Qwen-7B是支持中、英等多种语言的基座模型，在超过2万亿token数据集上训练，上下文窗口长度达到8k。Qwen-7B-Chat是基于基座模型的中英文对话模型，已实现与人类认知对齐。</td>
+                          <td>7B</td>
+                          <td>25/124/2k</td>
+                          <td>288</td>
+                          <td> 11</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">D1-LLM量化</h4>
+                  <p class="card-description">
+                    LLM加速、量化部署、端侧部署 
+                  </p>
+                  <div class="table-responsive pt-3">
+                    <!-- <table class="table table-bordered"> -->
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>Tags</th>
+                          <th>Name</th>
+                          <th>Company/Organization</th>
+                          <th>Brief Introduction</th>
+                          <th> Github WFS</th>
+                          <th>HF Like</th>
+                          <th>Contributors</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td> </td>
+                          <td><a href="https://github.com/ggerganov/ggml">GGML</td>
+                          <td>ggml.ai</td>
+                          <td>ggml是一个用于机器学习的张量库，可在商用硬件上启用大型模型和高性能，它被llama.cpp和 whisper.cpp使用。</td>
+                          <td>100/711/7.6k</td>
+                          <td> -</td>
+                          <td> 83</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td><label class="badge badge-danger">Hot</label> <label class="badge badge-primary">Large</label></td>
+                          <td><a href="https://github.com/ggerganov/llama.cpp">llama.cpp</td>
+                          <td>ggml.ai</td>
+                          <td>没有依赖项的普通 C/C++ 实现，目标是在 MacBook 上使用 4 位量化运行llama模型</td>
+                          <td>268/3.4k/43.5k</td>
+                          <td> -</td>
+                          <td> 401</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td><label class="badge badge-danger">Hot</label> <label class="badge badge-primary">Large</label></td>
+                          <td><a href="https://github.com/ggerganov/whisper.cpp">whisper.cpp</td>
+                          <td>ggml.ai</td>
+                          <td>OpenAI的Whisper自动语音识别(ASR)模型的高性能推理。支持平台：Mac 操作系统/（英特尔和 Arm）iOS /安卓/Linux/自由系统WebAssembly/Windows( MSVC和MinGW ]/树莓派</td>
+                          <td>192/1.4k/24.7k</td>
+                          <td> 324</td>
+                          <td> 178</td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td></td>
+                          <td><a href="https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0">lamma2.c</td>
+                          <td>openAI/karpathy</td>
+                          <td>在 PyTorch 中训练一个 baby Llama2 模型，然后使用近 500 行纯 C、无任何依赖项的文件进行推理。并且，这个预训练模型能够在 M1 芯片的 MacBook Air上以fp32的浮点精度、18 tok/s的速度来生成故事。</td>
+                          <td>33/134/10.9k</td>
+                          <td> -</td>
+                          <td> -</td>
+                        </tr>
+                        <tr>
+                          <td>5</td>
+                          <td> </td>
+                          <td><a href="https://github.com/ztxz16/fastllm">fastllm</td>
+                          <td>fastllm</td>
+                          <td>fastllm是纯c++实现，无第三方依赖的高性能大模型推理库,支持glm, llama, moss基座，手机端流畅运行</td>
+                          <td>21/159/2.4k</td>
+                          <td> -</td>
+                          <td> 26</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">D1-AGI通用人工智能</h4>
+                  <p class="card-description">
+                    通用人工智能 
+                  </p>
+                  <div class="table-responsive pt-3">
+                    <!-- <table class="table table-bordered"> -->
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>Update Date</th>
+                          <th>Name</th>
+                          <th>Company/Organization</th>
+                          <th>Brief Introduction</th>
+                          <th> Github WFS</th>
+                          <th>Contributors</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td> <label class="badge badge-warning">Super Hot</label></td>
+                          <td><a href="https://github.com/Significant-Gravitas/AutoGPT">Auto-GPT</td>
+                          <td>Significant Ggravitas </td>
+                          <td>Auto-GPT可以不断的跟自己对话，然后找出最靠近目标的答案，只需为其提供一个AI名称、描述和五个目标，然后AutoGPT就可以自己完成项目。它可以读写文件、浏览网页、审查自己提示的结果，以及将其与所说的提示历史记录相结合。</td>
+                          <td>1.5/36.1k/153k</td>
+                          <td> 261</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td> <label class="badge badge-danger">Hot</label></td>
+                          <td><a href="https://github.com/microsoft/TaskMatrix">TaskMatrix</td>
+                          <td>Microsoft</td>
+                          <td>TaskMatrix连接 ChatGPT 和一系列 Visual Foundation 模型，以实现在聊天期间发送和接收图像。</td>
+                          <td>316/3.4k/34.3k</td>
+                          <td> 16</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td> <label class="badge badge-danger">Hot</label></td>
+                          <td><a href="https://github.com/reworkd/AgentGPT">AgentGPT</td>
+                          <td>Asim Shrestha</td>
+                          <td>自定义AI，让它开始任何你能想到的目标。它将试图通过思考要做的任务。</td>
+                          <td>272/9k/27.5k</td>
+                          <td> 19</td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td> </td>
+                          <td><a href="https://github.com/yoheinakajima/babyagi">babyagi</td>
+                          <td>Yohei Nakajima</td>
+                          <td>babyagi是一个智能任务管理和解决工具，它结合了OpenAI GPT-4和Pinecone向量搜索引擎的力量，以自动完成和管理一系列任务，从一个初始任务开始，babyagi使用GPT4生成解决方案和新任务，并将解决方案存储在Pinecone中以便进一步检索。</td>
+                          <td>190/2.3k/17k</td>
+                          <td>38</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">D1-LLM训练</h4>
+                  <p class="card-description">
+                    LLM分布式训练平台训练
+                  </p>
+                  <div class="table-responsive pt-3">
+                    <!-- <table class="table table-bordered"> -->
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>Tags</th>
+                          <th>Name</th>
+                          <th>Company/Organization</th>
+                          <th>Brief Introduction</th>
+                          <th> Github WFS</th>
+                          <th>Contributors</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td> <label class="badge badge-danger">Hot</label></td>
+                          <td><a href="https://github.com/microsoft/DeepSpeed">DeepSpeed</td>
+                          <td>Microsoft </td>
+                          <td>DeepSpeed 是一款易于使用的深度学习优化软件套件，可为 DL 训练和推理提供前所未有的规模和速度。</td>
+                          <td>253/2.5k/29.4k</td>
+                          <td> 275</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td> <label class="badge badge-danger">Hot</label> </td>
+                          <td><a href="https://github.com/hpcaitech/ColossalAI">Colossal-AI</td>
+                          <td>潞晨科技</td>
+                          <td>基于 PyTorch 的用于大规模并行训练的深度学习系统，提供了一系列的并行技术，张量并行、流水线并行、零冗余数据并行、异构计算等。</td>
+                          <td>318/3.4k/35.2k</td>
+                          <td> 158</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td> </td>
+                          <td><a href="https://colab.research.google.com/?utm_source=scs-index">Colab</td>
+                          <td>Google</td>
+                          <td>官方支持存储huggingface、Kaggle的Tokens,API Key,保密存储，仅自己可见</td>
+                          <td>-</td>
+                          <td> -</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">D1-LLM相关平台、工具链</h4>
+                  <p class="card-description">
+                    LLM相关平台、工具链洞察，包括LLM API ,LLM 工具链 
+                  </p>
+                  <div class="table-responsive pt-3">
+                    <!-- <table class="table table-bordered"> -->
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>Tags</th>
+                          <th>Name</th>
+                          <th>Company/Organization</th>
+                          <th>Brief Introduction</th>
+                          <th> Github WFS</th>
+                          <th>Contributors</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td> <label class="badge badge-danger">Hot</label> <label class="badge badge-primary">Large</label></td>
+                          <td><a href="https://github.com/langchain-ai/langchain">LangChain</td>
+                          <td>LangChain-AI</td>
+                          <td>LLMs接口框架，基于 OPENAI 的 GPT3 等大语言模型设计一系列便于集成到实际应用中的接口，降低了在实际场景中部署大语言模型的难度</td>
+                          <td>501/8.7k/55.9k</td>
+                          <td> -</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td> </td>
+                          <td><a href="https://github.com/microsoft/TypeChat">TypeChat</td>
+                          <td>Microsoft</td>
+                          <td>TypeChat是使用AI在自然语言和应用程序和API之间建立桥梁,TypeChat replaces prompt engineering with schema engineering.</td>
+                          <td>66/313/7k</td>
+                          <td> 20</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>  </td>
+                          <td><a href="https://github.com/huggingface/text-generation-inference">text-generation-inference</td>
+                          <td>huggingface</td>
+                          <td>用于文本生成推理的Rust、gRPC服务。在HuggingFace的生产中用于为 Hugging Chat、推理API和推理端点提供支持。通过简单的启动器提供最流行的大型语言模型，张量并行可在多个GPU上实现更快的推理，使用服务器发送事件 (SSE) 的令牌流。</td>
+                          <td>87/618/5.8k</td>
+                          <td> 63</td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td> <label class="badge badge-danger">Hot</label></td>
+                          <td><a href="https://github.com/lm-sys/FastChat">FastChat</td>
+                          <td>LMSYS</td>
+                          <td>FastChat 是一个开放平台，用于训练、服务和评估基于大型语言模型的聊天机器人。</td>
+                          <td>303/3.2k/28.9k</td>
+                          <td> 186</td>
+                        </tr>
+                        <tr>
+                          <td>5</td>
+                          <td> <label class="badge badge-danger">Hot</label> <label class="badge badge-primary">Large</label></td>
+                          <td><a href="https://github.com/LAION-AI/Open-Assistant">OpenAssistant</td>
+                          <td>LAION</td>
+                          <td>Open Assistant 是一个旨在让每个人都能访问基于聊天的大型语言模型的项目。可以使用 Docker 设置运行Open-Assistant所需的整个堆栈</td>
+                          <td>417/3.1k/35k</td>
+                          <td> 312</td>
+                        </tr>
+                        <tr>
+                          <td>6</td>
+                          <td></td>
+                          <td><a href="https://github.com/mlc-ai/web-llm">Web-LLM</td>
+                          <td>MLC.AI</td>
+                          <td>基于WebGPU，不需要服务器，直接部署LLM，主要流程是建立在 Apache TVM Unity 之上。</td>
+                          <td>45/194/7.7k</td>
+                          <td>23</td>
+                        </tr>
+                        
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">D1-LLM相关套件</h4>
+                  <p class="card-description">
+                    LLM相关套件
+                  </p>
+                  <div class="table-responsive pt-3">
+                    <!-- <table class="table table-bordered"> -->
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>Tags</th>
+                          <th>Name</th>
+                          <th>Company/Organization</th>
+                          <th>Brief Introduction</th>
+                          <th> Github WFS</th>
+                          <th>Contributors</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td> <label class="badge badge-danger">Hot</label> <label class="badge badge-primary">Large</label></td>
+                          <td><a href="https://github.com/huggingface/transformers">Transformers</td>
+                          <td>Hugging Face</td>
+                          <td>Transformers 提供了数千个预训练模型来执行不同模式（例如文本、视觉和音频）的任务。Transformer 模型还可以组合执行多种模式的任务，例如表格问答、光学字符识别、从扫描文档中提取信息、视频分类和视觉问答。</td>
+                          <td>1.1k/21.9k/115k</td>
+                          <td> 2153</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td> </td>
+                          <td><a href="https://github.com/huggingface/trl">TRL - Transformer Reinforcement Learning</td>
+                          <td>Hugging Face</td>
+                          <td>trl是一个完整的堆栈库，提供了一组工具来通过强化学习训练 Transformer 语言模型，从监督微调步骤 (SFT)、奖励建模步骤 (RM) 到近端策略优化 (PPO) 步骤。</td>
+                          <td>66/672/6.3k</td>
+                          <td> 10</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td> <label class="badge badge-danger">Hot</label> <label class="badge badge-primary">Large</label> </td>
+                          <td><a href="https://github.com/Lightning-AI/lightning">Lightning</td>
+                          <td>Lightning-AI</td>
+                          <td>在 PyTorch 中以最小代码更改来高效扩展训练的一种方法是使用开源 Fabric 库，它可以看作是 PyTorch 的一个轻量级包装库 / 接口。通过 pip 安装。</td>
+                          <td>237/3k/25.1k</td>
+                          <td> 882</td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td> </td>
+                          <td><a href="https://github.com/neulab/prompt2model">Prompt2Model</td>
+                          <td>卡内基梅隆 && 清华</td>
+                          <td>Prompt2Model被设计为一个自动化管道，从用户的Prompt中提取必要的任务信息，然后通过三个渠道（数据集检索、数据集生成、模型检索）自动收集和合成特定于任务的知识，最后实现模型评估与部署</td>
+                          <td>21/136/1.6k</td>
+                          <td> 14</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-12 stretch-card">
+              
+            </div>
+          </div>
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:../../partials/_footer.html -->
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright &copy; 2022.Company name All rights reserved.<a target="_blank" href="https://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a>
+            
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- plugins:js -->
+  <script src="static/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page -->
+  <!-- End plugin js for this page -->
+  <!-- inject:js -->
+  <script src="static/js/off-canvas.js"></script>
+  <script src="static/js/hoverable-collapse.js"></script>
+  <script src="static/js/template.js"></script>
+  <script src="static/js/settings.js"></script>
+  <script src="static/js/todolist.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <!-- End custom js for this page-->
+</body>
+
+</html>
