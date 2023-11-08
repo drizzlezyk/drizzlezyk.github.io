@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Skydash Admin</title>
+  <title>LLM Insight - Open Source</title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="static/css/feather.css">
   <link rel="stylesheet" href="static/css/themify-icons.css">
@@ -345,6 +345,26 @@
                           <td>170</td>
                           <td>11</td>
                         </tr>
+                        <tr>
+                          <td>10</td>
+                          <td> </td>
+                          <td><a href="https://github.com/openai/whisper">whisper</td>
+                          <td>openAI</td>
+                          <td>Whisper是一种通用的语音识别模型，在包含各种音频的大型数据集上训练的，可以执行多语言语音识别、语音翻译和语言识别的多任务模型，它在英语语音识别方面接近人类水平的鲁棒性和准确性。</td>
+                          <td>422/5.5k/47.9k</td>
+                          <td>132</td>
+                          <td>66</td>
+                        </tr>
+                        <tr class="table-info">
+                          <td>10</td>
+                          <td> </td>
+                          <td><a href="https://huggingface.co/openai/whisper-large-v3">whisper-large-v3</td>
+                          <td>openAI</td>
+                          <td>v3错误率减少了10%到20%，加入粤语，用Whisper收集的100万小时弱标记音频和400万小时伪标记音频进行训练，并且没有架构变化。</td>
+                          <td>422/5.5k/47.9k</td>
+                          <td>132</td>
+                          <td>66</td>
+                        </tr>
                       </tbody>
                     </table>
                   </div>
@@ -474,6 +494,28 @@
                           <td>288</td>
                           <td> 11</td>
                         </tr>
+                        <tr class="table-info">
+                          <td>10</td>
+                          <td> </td>
+                          <td><a href="https://huggingface.co/01-ai/Yi-34B">Yi</td>
+                          <td>01ai</td>
+                          <td>第一个公开版本包含两个双语（英语/中文）基础模型,两个模型都以 4K 序列长度进行训练，并且在推理期间可以扩展到 32K。</td>
+                          <td>6B/34B</td>
+                          <td>49/116/2.4k</td>
+                          <td>578</td>
+                          <td> 6</td>
+                        </tr>
+                        <tr class="table-info">
+                          <td>11</td>
+                          <td> </td>
+                          <td><a href="https://huggingface.co/microsoft/phi-1_5">phi-1_5</td>
+                          <td>Microsoft</td>
+                          <td>phi-1.5在参数少于100亿的模型中表现出近乎最先进的性能，从训练中排除通用网络爬虫数据源,可防止直接暴露于潜在有害的在线内容，从而在无需RLHF的情况下增强模型的安全性.</td>
+                          <td>6B/34B</td>
+                          <td>49/116/2.4k</td>
+                          <td>578</td>
+                          <td> 6</td>
+                        </tr>
                       </tbody>
                     </table>
                   </div>
@@ -536,10 +578,10 @@
                         <tr>
                           <td>4</td>
                           <td></td>
-                          <td><a href="https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0">lamma2.c</td>
+                          <td><a href="https://github.com/karpathy/llama2.c">lamma2.c</td>
                           <td>openAI/karpathy</td>
                           <td>在 PyTorch 中训练一个 baby Llama2 模型，然后使用近 500 行纯 C、无任何依赖项的文件进行推理。并且，这个预训练模型能够在 M1 芯片的 MacBook Air上以fp32的浮点精度、18 tok/s的速度来生成故事。</td>
-                          <td>33/134/10.9k</td>
+                          <td>33/134/12.8k</td>
                           <td> -</td>
                           <td> -</td>
                         </tr>
