@@ -25,7 +25,7 @@
     <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
       <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
         <a class="navbar-brand brand-logo mr-5" href="index.html"><img src="static/picture/head.jpg" class="mr-2" alt="logo"></a>
-        <a> drizzlezyk</a>
+        <a> LLM</a>
       </div>
       <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
         
@@ -145,59 +145,7 @@
               <p class="settings-heading border-top-0 mb-3 pl-3 pt-0 border-bottom-0 pb-0">Friends</p>
               <small class="settings-heading border-top-0 mb-3 pt-0 border-bottom-0 pb-0 pr-3 font-weight-normal">See All</small>
             </div>
-            <ul class="chat-list">
-              <li class="list active">
-                <div class="profile"><img src="static/picture/face1.jpg" alt="image"><span class="online"></span></div>
-                <div class="info">
-                  <p>Thomas Douglas</p>
-                  <p>Available</p>
-                </div>
-                <small class="text-muted my-auto">19 min</small>
-              </li>
-              <li class="list">
-                <div class="profile"><img src="static/picture/face2.jpg" alt="image"><span class="offline"></span></div>
-                <div class="info">
-                  <div class="wrapper d-flex">
-                    <p>Catherine</p>
-                  </div>
-                  <p>Away</p>
-                </div>
-                <div class="badge badge-success badge-pill my-auto mx-2">4</div>
-                <small class="text-muted my-auto">23 min</small>
-              </li>
-              <li class="list">
-                <div class="profile"><img src="static/picture/face3.jpg" alt="image"><span class="online"></span></div>
-                <div class="info">
-                  <p>Daniel Russell</p>
-                  <p>Available</p>
-                </div>
-                <small class="text-muted my-auto">14 min</small>
-              </li>
-              <li class="list">
-                <div class="profile"><img src="static/picture/face4.jpg" alt="image"><span class="offline"></span></div>
-                <div class="info">
-                  <p>James Richardson</p>
-                  <p>Away</p>
-                </div>
-                <small class="text-muted my-auto">2 min</small>
-              </li>
-              <li class="list">
-                <div class="profile"><img src="static/picture/face5.jpg" alt="image"><span class="online"></span></div>
-                <div class="info">
-                  <p>Madeline Kennedy</p>
-                  <p>Available</p>
-                </div>
-                <small class="text-muted my-auto">5 min</small>
-              </li>
-              <li class="list">
-                <div class="profile"><img src="static/picture/face6.jpg" alt="image"><span class="online"></span></div>
-                <div class="info">
-                  <p>Sarah Graves</p>
-                  <p>Available</p>
-                </div>
-                <small class="text-muted my-auto">47 min</small>
-              </li>
-            </ul>
+           
           </div>
           <!-- chat tab ends -->
         </div>
@@ -222,6 +170,12 @@
             <a class="nav-link" href="table-d1.html">
               <i class="icon-grid menu-icon"></i>
               <span class="menu-title">Insight-D1</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="leaderboard.html">
+              <i class="icon-grid menu-icon"></i>
+              <span class="menu-title">Leaderboard</span>
             </a>
           </li>
         </ul>
@@ -436,7 +390,7 @@
                           <td>ChatGLM-6B 是一个开源的、支持中英双语的对话语言模型，基于General Language Model(GLM) 架构，具有62亿参数。结合模型量化技术，用户可以在消费级的显卡上进行本地部署.</td>
                           <td>6B</td>
                           <td>358/4.8k/35.4k</td>
-                          <td> -</td>
+                          <td> 1.8k</td>
                           <td> 45</td>
                         </tr>
                         <tr>
@@ -445,9 +399,9 @@
                           <td><a href="https://github.com/databrickslabs/dolly">Dolly</td>
                           <td>Databricks</td>
                           <td>Dolly 2.0 是一个 12B参数的语言模型，它基于开源 EleutherAI pythia 模型系列，根据 Databricks 员工众包的新的、高质量的人工生成指令跟随数据集进行了微调。</td>
-                          <td>12B</td>
+                          <td>12B/3B</td>
                           <td>108/779/10.6k</td>
-                          <td> -</td>
+                          <td> 1.89k</td>
                           <td> 13</td>
                         </tr>
                         <tr>
@@ -455,8 +409,8 @@
                           <td> </td>
                           <td><a href="https://huggingface.co/tiiuae/falcon-40b">Falcon</td>
                           <td>阿联酋</td>
-                          <td>Falcon属于自回归解码器模型。它使用自定义工具构建，包含一个独特的数据管道，该管道从公开网络中提取训练数据。Falcon一共耗费两个月，在AWS的384个A100 40G GPU上训练而成。</td>
-                          <td>40B、7B</td>
+                          <td>Falcon属于自回归解码器模型。它使用自定义工具构建，包含一个独特的数据管道，该管道从公开网络中提取训练数据。Falcon一共耗费两个月，在AWS的384个A100 40G GPU上训练而成。最新推出了falcon-180B</td>
+                          <td>40B\7B\180B</td>
                           <td>-</td>
                           <td> 2.32k</td>
                           <td> -</td>
@@ -526,6 +480,50 @@
                           <td>66/537/5.4k</td>
                           <td>793</td>
                           <td>7</td>
+                        </tr>
+                        <tr>
+                          <td>13</td>
+                          <td> </td>
+                          <td><a href="https://github.com/SkyworkAI/Skywork">SkyWork</td>
+                          <td>昆仑万维</td>
+                          <td>模型在高质量清洗过滤的3.2万亿个多语言（主要是中文和英文）和代码数据上进行预训练，它在多种评测和各种基准测试上都展现了同等规模模型的最佳效果。</td>
+                          <td>7B/13B</td>
+                          <td>14/52/716</td>
+                          <td>-</td>
+                          <td>4</td>
+                        </tr>
+                        <tr>
+                          <td>14</td>
+                          <td> </td>
+                          <td><a href="https://huggingface.co/mosaicml/mpt-7b">MPT</td>
+                          <td>mosaicml</td>
+                          <td>MPT-7B 是一种decoder-style transformer，在 1T 英语文本和代码标记上从头开始进行预训练。该模型由MosaicML训练。</td>
+                          <td>7B</td>
+                          <td></td>
+                          <td>1.09k</td>
+                          <td>-</td>
+                        </tr>
+                        <tr>
+                          <td>15</td>
+                          <td> </td>
+                          <td><a href="https://huggingface.co/JosephusCheung/Guanaco?text=Hey+my+name+is+Julien%21+How+are+you%3F">Guanaco</td>
+                          <td>CausalLM</td>
+                          <td>基于LLaMA 7B模型构建的高级指令跟踪语言模型。在Alpaca的初始52K数据集基础上新增534,530条，涵盖英语、中文、繁体中文、日语、及各种语言和语法任务。丰富数据使guanaco在多语言环境中表现出色。</td>
+                          <td>7B</td>
+                          <td></td>
+                          <td>214</td>
+                          <td>-</td>
+                        </tr>
+                        <tr>
+                          <td>16</td>
+                          <td> <label class="badge badge-danger">Hot</label></td>
+                          <td><a href="https://huggingface.co/bigscience/bloom">Bloom</td>
+                          <td>BigScience </td>
+                          <td>BLOOM 是一种自回归大型语言模型，经过训练，可使用工业规模的计算资源根据大量文本数据的提示继续文本。因此，它能够以46种语言和13种编程语言输出连贯的文本，与人类编写的文本几乎没有区别。</td>
+                          <td>176B</td>
+                          <td>-</td>
+                          <td>4.1k</td>
+                          <td>-</td>
                         </tr>
                       </tbody>
                     </table>
