@@ -338,6 +338,7 @@
                       <thead>
                         <tr>
                           <th>#</th>
+                          <th>Tag</th>
                           <th>Update Date</th>
                           <th>Name</th>
                           <th>Company/Organization</th>
@@ -351,19 +352,21 @@
                       <tbody>
                         <tr>
                           <td>1</td>
-                          <td><label class="badge badge-danger">Hot</label></td>
-                          <td><a href="https://github.com/facebookresearch/llama">llama2</td>
-                          <td>Meta</td>
-                          <td>该架构与第一个 Llama 非常相似，在本文之后添加了Groupe Query Attention (GQA),相比于 Llama 1，Llama 2 的训练数据多了 40%，上下文长度也翻倍，并采用了分组查询注意力机制。</td>
-                          <td>7B\13B\70B</td>
-                          <td>457/7.5k/44.7k</td>
-                          <td>2.93k</td>
-                          <td>40</td>
+                          <td> <label class="badge badge-danger">Hot</label></td>
+                          <td>2022/5/26</td>
+                          <td><a href="https://huggingface.co/bigscience/bloom">Bloom</td>
+                          <td>BigScience </td>
+                          <td>BLOOM 是一种自回归大型语言模型，经过训练，可使用工业规模的计算资源根据大量文本数据的提示继续文本。因此，它能够以46种语言和13种编程语言输出连贯的文本，与人类编写的文本几乎没有区别。</td>
+                          <td>176B</td>
+                          <td>-</td>
+                          <td>4.1k</td>
+                          <td>-</td>
                         </tr>
                         <tr>
                           <td>2</td>
                           <td> <label class="badge badge-danger">Hot</label></td>
-                          <td><a href="https://github.com/tatsu-lab/stanford_alpaca">Alpaca</td>
+                          <td>2023/2/24</td>
+                          <td><a href="https://github.com/tatsu-lab/stanford_alpaca">Llama</td>
                           <td>Stanford</td>
                           <td>Stanford Alpaca模型是根据 7B LLaMA 模型在 Self-Instruct论文中的技术生成的 52K 指令跟随数据上进行微调的。</td>
                           <td>7B</td>
@@ -373,18 +376,32 @@
                         </tr>
                         <tr>
                           <td>3</td>
+                          <td> <label class="badge badge-danger">Hot</label></td>
+                          <td></td>
+                          <td><a href="https://github.com/tatsu-lab/stanford_alpaca">Alpaca</td>
+                          <td>Stanford</td>
+                          <td>Stanford Alpaca模型是根据 7B LLaMA 模型在 Self-Instruct论文中的技术生成的 52K 指令跟随数据上进行微调的。</td>
+                          <td>7B</td>
+                          <td>278/3k/27.2k</td>
+                          <td> -</td>
+                          <td> 7</td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
                           <td> </td>
+                          <td></td>
                           <td><a href="https://huggingface.co/lmsys/vicuna-13b-v1.3">Vicuna</td>
                           <td>加州大学伯克利分校</td>
-                          <td>Vicuna-13B达到了OpenAI ChatGPT和Google Bard 90%以上的质量，同时在 90% 以上的情况下超过了LLaMA和 Stanford Alpaca等其他模型的表现。训练和服务代码，以及在线演示都是公开的，可用于非商业用途。</td>
+                          <td>Vicuna-13B达到了OpenAI ChatGPT和Google Bard 90%以上质量，在90%以上的情况下超过了LLaMA和Stanford Alpaca等其他模型表现。</td>
                           <td>13B</td>
                           <td></td>
                           <td> 161</td>
                           <td> -</td>
                         </tr>
                         <tr>
-                          <td>4</td>
+                          <td>5</td>
                           <td> <label class="badge badge-danger">Hot</label></td>
+                          <td></td>
                           <td><a href="https://github.com/THUDM/ChatGLM-6B">ChatGLM</td>
                           <td>清华</td>
                           <td>ChatGLM-6B 是一个开源的、支持中英双语的对话语言模型，基于General Language Model(GLM) 架构，具有62亿参数。结合模型量化技术，用户可以在消费级的显卡上进行本地部署.</td>
@@ -394,8 +411,9 @@
                           <td> 45</td>
                         </tr>
                         <tr>
-                          <td>5</td>
+                          <td>6</td>
                           <td> </td>
+                          <td></td>
                           <td><a href="https://github.com/databrickslabs/dolly">Dolly</td>
                           <td>Databricks</td>
                           <td>Dolly 2.0 是一个 12B参数的语言模型，它基于开源 EleutherAI pythia 模型系列，根据 Databricks 员工众包的新的、高质量的人工生成指令跟随数据集进行了微调。</td>
@@ -405,62 +423,104 @@
                           <td> 13</td>
                         </tr>
                         <tr>
-                          <td>6</td>
+                          <td>7</td>
                           <td> </td>
+                          <td>2023/5/25</td>
                           <td><a href="https://huggingface.co/tiiuae/falcon-40b">Falcon</td>
                           <td>阿联酋</td>
-                          <td>Falcon属于自回归解码器模型。它使用自定义工具构建，包含一个独特的数据管道，该管道从公开网络中提取训练数据。Falcon一共耗费两个月，在AWS的384个A100 40G GPU上训练而成。最新推出了falcon-180B</td>
+                          <td>Falcon属于自回归解码器模型。它使用自定义工具构建，包含一个独特的数据管道，该管道从公开网络中提取训练数据。Falcon一共耗费两个月，在AWS的384个A100 40G GPU上训练而成</td>
                           <td>40B\7B\180B</td>
                           <td>-</td>
                           <td> 2.32k</td>
                           <td> -</td>
                         </tr>
                         <tr>
-                          <td>7</td>
-                          <td></td>
-                          <td><a href="https://huggingface.co/mistralai/Mistral-7B-v0.1">Mistral 7B</td>
-                          <td>Mistral AI</td>
-                          <td>在所有基准测试中均优于 Llama 2 13B，接近 CodeLlama 7B 的代码性能，同时保持良好的英语任务表现；使用分组查询注意力 (GQA) 进行更快的推理；使用滑动窗口注意 (SWA) 以较小的成本处理较长的序列</td>
-                          <td>7B</td>
-                          <td>-</td>
-                          <td> 1.71k</td>
-                          <td> -</td>
-                        </tr>
-                        <tr>
                           <td>8</td>
-                          <td> </td>
-                          <td><a href="https://huggingface.co/HuggingFaceH4/zephyr-7b-beta">Zephyr-7B</td>
-                          <td>HuggingFace</td>
-                          <td>基于Mistral 7B进行微调的模型l；Zephyr-7B-β 是MT-Bench和AlpacaEval基准上排名最高的 7B 聊天模型</td>
-                          <td>7B</td>
-                          <td>-</td>
-                          <td> 665</td>
-                          <td> -</td>
+                          <td></td>
+                          <td>2023/6/15 </td>
+                          <td><a href="https://github.com/baichuan-inc/baichuan-7B">Baichuan</td>
+                          <td>百川智能</td>
+                          <td>Baichuan-7B是由百川智能开发的一个开源可商用的大规模预训练语言模型。基于Transformer结构，在大约1.2万亿tokens上训练的70亿参数模型，支持中英双语，上下文窗口长度为4096。</td>
+                          <td>7B/13B</td>
+                          <td>66/537/5.4k</td>
+                          <td>793</td>
+                          <td>7</td>
                         </tr>
                         <tr>
                           <td>9</td>
                           <td> </td>
-                          <td><a href="https://huggingface.co/Qwen/Qwen-7B">QWen</td>
-                          <td>阿里</td>
-                          <td>Qwen-7B是支持中、英等多种语言的基座模型，在超过2万亿token数据集上训练，上下文窗口长度达到8k。Qwen-7B-Chat是基于基座模型的中英文对话模型，已实现与人类认知对齐。</td>
+                          <td>2023/6/22</td>
+                          <td><a href="https://huggingface.co/mosaicml/mpt-7b">MPT</td>
+                          <td>mosaicml</td>
+                          <td>MPT-7B 是一种decoder-style transformer，在 1T 英语文本和代码标记上从头开始进行预训练。该模型由MosaicML训练。</td>
                           <td>7B</td>
-                          <td>25/124/2k</td>
-                          <td>288</td>
-                          <td> 11</td>
+                          <td></td>
+                          <td>1.09k</td>
+                          <td>-</td>
                         </tr>
-                        <tr class="table-info">
+                        <tr>
                           <td>10</td>
                           <td> </td>
-                          <td><a href="https://huggingface.co/01-ai/Yi-34B">Yi</td>
-                          <td>01ai</td>
-                          <td>第一个公开版本包含两个双语（英语/中文）基础模型,两个模型都以 4K 序列长度进行训练，并且在推理期间可以扩展到 32K。</td>
-                          <td>6B/34B</td>
-                          <td>49/116/2.4k</td>
-                          <td>578</td>
-                          <td> 6</td>
+                          <td> 2023/6/30</td>
+                          <td><a href="https://huggingface.co/openlm-research/open_llama_7b_v2">OpenLlama</td>
+                          <td>UC Berkeley</td>
+                          <td>LLaMA模型的开源复现，在RedPajama数据集上训练，使用了与LLaMA相同的预处理步骤和超参数，模型结构，上下文长度，训练步骤，学习率调度和优化器。</td>
+                          <td>7B/13B</td>
+                          <td>119/368/6.8k</td>
+                          <td>91</td>
+                          <td>7</td>
+                        </tr>
+                        <tr>
+                          <td>11</td>
+                          <td><label class="badge badge-danger">Hot</label></td>
+                          <td>2023/7/18</td>
+                          <td><a href="https://github.com/facebookresearch/llama">Llama2</td>
+                          <td>Meta</td>
+                          <td>该架构与第一个 Llama 非常相似，在本文之后添加了Groupe Query Attention (GQA),相比于 Llama 1，Llama 2 的训练数据多了 40%，上下文长度也翻倍，并采用了分组查询注意力机制。</td>
+                          <td>7B</td>
+                          <td>119/346/6.8k</td>
+                          <td>91</td>
+                          <td>3</td>
+                        </tr>
+                        <tr>
+                          <td>12</td>
+                          <td> </td>
+                          <td>2023/9/6</td>
+                          <td><a href="https://huggingface.co/tiiuae/falcon-180b">Falcon-180B</td>
+                          <td>阿联酋</td>
+                          <td>Falcon属于自回归解码器模型。使用精选语料库增强的RefinedWeb的3,500Btoken上进行训练。将需要至少 400GB 内存才能使用 Falcon-180B 快速运行推理</td>
+                          <td>40B\7B\180B</td>
+                          <td>-</td>
+                          <td> 896</td>
+                          <td> -</td>
+                        </tr>
+                        <tr>
+                          <td>13</td>
+                          <td></td>
+                          <td>2023/9/20</td>
+                          <td><a href="https://github.com/InternLM/InternLM">InternLM</td>
+                          <td>上海人工智能实验室</td>
+                          <td>InternLM-20B 在包含高质量英文、中文和代码数据的超过2.3T Token上进行了预训练。深度设置为60层，超越了使用 32 或 40 层的传统 7B 和 13B 型号。</td>
+                          <td>20B</td>
+                          <td>35/285/3.6k</td>
+                          <td>63</td>
+                          <td>40</td>
+                        </tr>
+                        <tr>
+                          <td>14</td>
+                          <td> </td>
+                          <td></td>
+                          <td><a href="https://huggingface.co/JosephusCheung/Guanaco?text=Hey+my+name+is+Julien%21+How+are+you%3F">Guanaco</td>
+                          <td>CausalLM</td>
+                          <td>基于LLaMA 7B模型构建的高级指令跟踪语言模型。在Alpaca的初始52K数据集基础上新增534,530条，涵盖英语、中文、繁体中文各种语言和语法任务。丰富数据使guanaco在多语言环境中表现出色。</td>
+                          <td>7B</td>
+                          <td></td>
+                          <td>214</td>
+                          <td>-</td>
                         </tr>
                         <tr class="table-info">
-                          <td>11</td>
+                          <td>15</td>
+                          <td></td>
                           <td> </td>
                           <td><a href="https://huggingface.co/microsoft/phi-1_5">phi-1_5</td>
                           <td>Microsoft</td>
@@ -471,19 +531,45 @@
                           <td>-</td>
                         </tr>
                         <tr>
-                          <td>12</td>
-                          <td> </td>
-                          <td><a href="https://github.com/baichuan-inc/baichuan-7B">Baichuan</td>
-                          <td>百川智能</td>
-                          <td>Baichuan-7B是由百川智能开发的一个开源可商用的大规模预训练语言模型。基于Transformer结构，在大约1.2万亿tokens上训练的70亿参数模型，支持中英双语，上下文窗口长度为4096。</td>
-                          <td>7B/13B</td>
-                          <td>66/537/5.4k</td>
-                          <td>793</td>
-                          <td>7</td>
+                          <td>16</td>
+                          <td></td>
+                          <td></td>
+                          <td><a href="https://huggingface.co/mistralai/Mistral-7B-v0.1">Mistral 7B</td>
+                          <td>Mistral AI</td>
+                          <td>在所有基准测试中均优于 Llama 2 13B，接近 CodeLlama 7B 的代码性能，同时保持良好的英语任务表现；使用分组查询注意力 (GQA) 进行更快的推理；使用滑动窗口注意以较小的成本处理较长的序列</td>
+                          <td>7B</td>
+                          <td>-</td>
+                          <td> 1.71k</td>
+                          <td> -</td>
                         </tr>
                         <tr>
-                          <td>13</td>
+                          <td>17</td>
                           <td> </td>
+                          <td></td>
+                          <td><a href="https://huggingface.co/HuggingFaceH4/zephyr-7b-beta">Zephyr-7B</td>
+                          <td>HuggingFace</td>
+                          <td>基于Mistral 7B进行微调的模型l；Zephyr-7B-β 是MT-Bench和AlpacaEval基准上排名最高的 7B 聊天模型</td>
+                          <td>7B</td>
+                          <td>-</td>
+                          <td> 665</td>
+                          <td> -</td>
+                        </tr>
+                        <tr>
+                          <td>18</td>
+                          <td> </td>
+                          <td>2023/10/13</td>
+                          <td><a href="https://huggingface.co/Qwen/Qwen-7B">QWen</td>
+                          <td>阿里</td>
+                          <td>Qwen-7B是支持中、英等多种语言的基座模型，在超过2万亿token数据集上训练，上下文窗口长度达到8k。Qwen-7B-Chat是基于基座模型的中英文对话模型，已实现与人类认知对齐。</td>
+                          <td>7B</td>
+                          <td>25/124/2k</td>
+                          <td>288</td>
+                          <td> 11</td>
+                        </tr>
+                        <tr>
+                          <td>19</td>
+                          <td> </td>
+                          <td>2023/10/30</td>
                           <td><a href="https://github.com/SkyworkAI/Skywork">SkyWork</td>
                           <td>昆仑万维</td>
                           <td>模型在高质量清洗过滤的3.2万亿个多语言（主要是中文和英文）和代码数据上进行预训练，它在多种评测和各种基准测试上都展现了同等规模模型的最佳效果。</td>
@@ -492,39 +578,21 @@
                           <td>-</td>
                           <td>4</td>
                         </tr>
-                        <tr>
-                          <td>14</td>
-                          <td> </td>
-                          <td><a href="https://huggingface.co/mosaicml/mpt-7b">MPT</td>
-                          <td>mosaicml</td>
-                          <td>MPT-7B 是一种decoder-style transformer，在 1T 英语文本和代码标记上从头开始进行预训练。该模型由MosaicML训练。</td>
-                          <td>7B</td>
+                        <tr class="table-info">
+                          <td>20</td>
                           <td></td>
-                          <td>1.09k</td>
-                          <td>-</td>
+                          <td> 2023/11/5</td>
+                          <td><a href="https://huggingface.co/01-ai/Yi-34B">Yi</td>
+                          <td>01ai</td>
+                          <td>第一个公开版本包含两个双语（英语/中文）基础模型,两个模型都以 4K 序列长度进行训练，并且在推理期间可以扩展到 32K。</td>
+                          <td>6B/34B</td>
+                          <td>49/116/2.4k</td>
+                          <td>578</td>
+                          <td> 6</td>
                         </tr>
-                        <tr>
-                          <td>15</td>
-                          <td> </td>
-                          <td><a href="https://huggingface.co/JosephusCheung/Guanaco?text=Hey+my+name+is+Julien%21+How+are+you%3F">Guanaco</td>
-                          <td>CausalLM</td>
-                          <td>基于LLaMA 7B模型构建的高级指令跟踪语言模型。在Alpaca的初始52K数据集基础上新增534,530条，涵盖英语、中文、繁体中文、日语、及各种语言和语法任务。丰富数据使guanaco在多语言环境中表现出色。</td>
-                          <td>7B</td>
-                          <td></td>
-                          <td>214</td>
-                          <td>-</td>
-                        </tr>
-                        <tr>
-                          <td>16</td>
-                          <td> <label class="badge badge-danger">Hot</label></td>
-                          <td><a href="https://huggingface.co/bigscience/bloom">Bloom</td>
-                          <td>BigScience </td>
-                          <td>BLOOM 是一种自回归大型语言模型，经过训练，可使用工业规模的计算资源根据大量文本数据的提示继续文本。因此，它能够以46种语言和13种编程语言输出连贯的文本，与人类编写的文本几乎没有区别。</td>
-                          <td>176B</td>
-                          <td>-</td>
-                          <td>4.1k</td>
-                          <td>-</td>
-                        </tr>
+
+                       
+                        
                       </tbody>
                     </table>
                   </div>
