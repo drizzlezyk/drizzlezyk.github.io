@@ -283,8 +283,17 @@
                           <td>3</td>
                           <td>Long-Context</td>
                           <td>Abacus.AI </td>
-                          <td>对现有基于 LLaMA 或 LLaMA 2 模型的上下文长度外推方法进行了广泛的调查，并提出一种新的 truncation 策略，该模型也是首个基于 LLaMA2 的 32k 上下文窗口开源 LLM。</td>
+                          <td>对现有基于 LLaMA 或 LLaMA 2 模型的上下文长度外推方法进行了广泛的调查，并提出一种新的 truncation 策略，该模型也是首个基于LLaMA2的32k上下文窗口开源 LLM。</td>
                           <td>-</td>
+                          <td> -</td>
+                          <td> -</td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>HyperAttention</td>
+                          <td>耶鲁大学、谷歌研究院</td>
+                          <td>对其注意力层的精确计算导致了二次（在序列长度上）运行时和内存复杂性。特点是模块化设计，可以轻松集成其他快速底层实现</td>
+                          <td><a href="https://arxiv.org/pdf/2310.05869.pdf">HyperAttention</a></td>
                           <td> -</td>
                           <td> -</td>
                         </tr>
@@ -430,7 +439,7 @@
                           <td>1</td>
                           <td><a href="https://github.com/vllm-project/vllm">vLLM</td>
                           <td>加州大学伯克利分校</td>
-                          <td>主要用于快速LLM推理和服务。vLLM的核心是PagedAttention，是一种新的注意力算法，将在操作系统的虚拟内存中分页的经典思想引入到LLM服务中,配备了PagedAttention的vLLM将LLM 服务状态重新定义：它比HuggingFace Transformers提供高达24倍的吞吐量，无需任何模型架构更改。</td>
+                          <td>主要用于快速LLM推理和服务，的核心是PagedAttention，一种新的注意力算法，将在操作系统的虚拟内存中分页的经典思想引入到LLM服务中,配备了PagedAttention的vLLM比HuggingFace Transformers提供高达24倍的吞吐量，无需任何模型架构更改。</td>
                           <td></td>
                           <td> 103/1.1k/9.1k</td>
                           <td>107</td>
